@@ -1,8 +1,8 @@
 cask "pistachio" do
-  version "0.4.6"
-  sha256 "3e13c00a6d3d6f89481c987971b871eba15bbbe8f479a316bd893c95dfb6fb13"
+  version "0.4.7"
+  sha256 "872d49ad43c771bb394b0ed1a4f8c3fde059f0a6d23d424dce7e42a80cf04ebc"
 
-  url "https://github.com/seba2390/pistachio/releases/download/v#{version}/Pistachio-v#{version}-macos-universal.zip"
+  url "https://github.com/seba2390/pistachio/releases/download/v#{version}/Pistachio-v#{version}-macos-arm64.zip"
   name "Pistachio"
   desc "Native desktop app for the pi coding agent"
   homepage "https://github.com/seba2390/pistachio"
@@ -12,6 +12,7 @@ cask "pistachio" do
     strategy :github_latest
   end
 
+  depends_on arch: :arm64
   depends_on macos: ">= :big_sur"
 
   app "Pistachio.app"
