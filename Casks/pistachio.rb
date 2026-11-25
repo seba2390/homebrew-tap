@@ -1,6 +1,6 @@
 cask "pistachio" do
-  version "0.4.9"
-  sha256 "063f7fd7d2b7bb0fb59d87d9a907af64f2a1435b24fddd80aee525f1ec41c43f"
+  version "0.5.0"
+  sha256 "b04c94c8824448c1cad74d2af7f98896ed6cb4aea9241c99d41aa9d7b124bc0a"
 
   url "https://github.com/seba2390/pistachio/releases/download/v#{version}/Pistachio-v#{version}-macos-arm64.zip"
   name "Pistachio"
